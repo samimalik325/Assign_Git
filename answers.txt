@@ -1,4 +1,24 @@
 • What is a gitignore file and what should it include for a Java project?
+ If you create a file in your repository named .gitignore, Git uses it to determine which files and directories to ignore, 
+ before you make a commit. A .gitignore file should be committed into your repository, in order to share the ignore rules 
+ with any other users that clone the repository. For a java project it should include all the files u dnt want to keep in
+ github for version control - like .zip, .rar, .jar, .class etc and it should allow .java files to upload to github.
+
 • What does fast-forward in Git mean?
+ Fast-Forward in git means that a pull/rebase was able to update directly to the new revision without having to perform any merges.
+ It means, when you pull, you are pulling only new commits. No merges, no conflicts, everything is clean. This happens when no changes
+ have been committed locally since the last pull.
+
 • Why should you have different branches?
+ When you're working on a project, you're going to have a bunch of different features or ideas in progress at any given time 
+ – some of which are ready to go, and others which are not. Branching exists to help you manage this workflow.When you create
+ a branch in your project, you're creating an environment where you can try out new ideas. Changes you make on a branch don't
+ affect the master branch, so you're free to experiment and commit changes, safe in the knowledge that your branch won't be 
+ merged until it's ready to be reviewed by someone you're collaborating with.
+
+
+
 • In a project how many remote Git repositories do you usually have?
+ I think we usually should have 1 repository per project as It works better with the development workflow e.g When you discover
+ you messed up something after several commits, it's much easier to fix when it's just one project. Just think about, you did 
+ commits to two other projects and now you need to fix the commit you did on the 3rd project.
